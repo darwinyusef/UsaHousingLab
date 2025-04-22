@@ -59,7 +59,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 	<input type="file" id="input-excel" accept=".xlsx, .xls" />
 
-<script> /*
+<script> 
   document.getElementById('input-excel').addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (!file) return;
@@ -94,13 +94,13 @@
       `;
       tbody.appendChild(tr);
     });
-  } */
+  } 
 </script>
 
 
-<script>
+<script>/*
   // Ruta pública al archivo Excel
-  const excelUrl = 'https://github.com/darwinyusef/UsaHousingLab/raw/refs/heads/master/ev2122042025/evaluacion_estudiantes05.xlsx';
+  const excelUrl = 'http://localhost/evaluacion_estudiantesOnly5.xlsx';
 
   fetch(excelUrl)
     .then(response => response.arrayBuffer())
@@ -133,7 +133,7 @@
       `;
       tbody.appendChild(tr);
     });
-  }
+  }*/
 </script>
 </body>
 </html>
